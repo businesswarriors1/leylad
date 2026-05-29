@@ -5,9 +5,9 @@ import { getTreatment } from "@/lib/treatments";
 const TREATMENT = getTreatment("/sqt-bio-microneedling-treatment")!;
 
 export const metadata: Metadata = {
-  title: "SQT bio microneedling",
+  title: "Needle-Free SQT Bio Microneedling Point Cook",
   description:
-    "SQT bio microneedling at Leyla D Point Cook — marine collagen spicules for plumper, smoother, more rejuvenated skin.",
+    "Needle-free SQT bio microneedling in Point Cook using marine collagen spicules for instant glow and smoother texture. Book your skin consult today.",
 };
 
 export default function SqtPage() {
@@ -19,7 +19,7 @@ export default function SqtPage() {
       image={TREATMENT.image}
       gallery={TREATMENT.gallery}
       galleryCaption="Renewal, without the needle."
-      what="SQT uses millions of microscopic sponge spicules — sourced from marine collagen — that gently embed into the upper layers of skin. They act as natural microneedles, opening channels for actives to penetrate while triggering a strong self-renewal response. No needles, no broken skin."
+      what="SQT uses millions of microscopic sponge spicules, sourced from marine collagen, that gently embed into the upper layers of skin. They act as natural microneedles, opening channels for actives to penetrate while triggering a strong self-renewal response. No needles, no broken skin."
       bestFor={[
         "Dull, tired skin",
         "Fine lines",

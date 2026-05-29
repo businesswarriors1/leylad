@@ -5,9 +5,9 @@ import { getTreatment } from "@/lib/treatments";
 const TREATMENT = getTreatment("/q-switch-laser")!;
 
 export const metadata: Metadata = {
-  title: "Q-Switch laser",
+  title: "Q-Switch Laser Melbourne for Pigment & Glow",
   description:
-    "Q-Switch laser at Leyla D in Point Cook — targeted nanosecond laser for pigmentation, sun damage and skin renewal.",
+    "Q-Switch laser in Melbourne's west targets pigmentation, sun damage and dullness with little downtime, plus carbon facials for instant glow. Book today.",
 };
 
 export default function QSwitchPage() {
@@ -15,11 +15,11 @@ export default function QSwitchPage() {
     <TreatmentPage
       eyebrow="Laser · Q-Switch"
       title="Q-Switch laser."
-      intro="A targeted nanosecond-pulse laser that shatters unwanted pigment without harming the surrounding skin — ideal for sun damage, age spots, freckles and overall skin renewal."
+      intro="A targeted nanosecond-pulse laser that shatters unwanted pigment without harming the surrounding skin, ideal for sun damage, age spots, freckles and overall skin renewal."
       image={TREATMENT.image}
       gallery={TREATMENT.gallery}
       galleryCaption="Specific wavelengths. Specific targets. Skin around them stays cool."
-      what="Q-Switch laser emits very short, high-energy pulses of light that pass harmlessly through the upper layers of skin and target pigment in the deeper layers. The pigment absorbs the energy and breaks into smaller particles, which your body then naturally clears over the following weeks. Because the pulse is so fast, surrounding tissue stays cool — meaning very little downtime and a much lower risk of unwanted side effects compared to older laser technology."
+      what="Q-Switch laser emits very short, high-energy pulses of light that pass harmlessly through the upper layers of skin and target pigment in the deeper layers. The pigment absorbs the energy and breaks into smaller particles, which your body then naturally clears over the following weeks. Because the pulse is so fast, surrounding tissue stays cool, meaning very little downtime and a much lower risk of unwanted side effects compared to older laser technology. The same device also powers our carbon facial (the Hollywood peel), where a fine carbon lotion is applied to the skin and the laser passes over it to deep-clean pores, refine texture and add instant radiance."
       bestFor={[
         "Sun spots & age spots",
         "Freckles & hyperpigmentation",
@@ -46,7 +46,7 @@ export default function QSwitchPage() {
       faqs={[
         {
           q: "Is Q-Switch laser safe for all skin types?",
-          a: "Q-Switch is well-tolerated across most Fitzpatrick skin types, but settings must be calibrated carefully — especially for deeper skin tones. We assess every client individually and patch-test where appropriate.",
+          a: "Q-Switch is well-tolerated across most Fitzpatrick skin types, but settings must be calibrated carefully, especially for deeper skin tones. We assess every client individually and patch-test where appropriate.",
         },
         {
           q: "How many sessions will I need?",
@@ -59,6 +59,10 @@ export default function QSwitchPage() {
         {
           q: "Does it hurt?",
           a: "Most clients describe it as a series of warm pin-pricks or rubber band snaps. Comfortable for most people without anaesthetic.",
+        },
+        {
+          q: "What is a carbon facial?",
+          a: "The carbon facial, often called a Hollywood peel, uses the same Q-Switch laser with a layer of carbon lotion applied to the skin. The laser targets the carbon to gently exfoliate, draw out impurities, refine pores and boost radiance, with no downtime. It's a great option for dull, congested or oily skin and a glow before an event.",
         },
       ]}
       freshaNote="Full pricing and session times for Q-Switch laser live on our Fresha booking page."

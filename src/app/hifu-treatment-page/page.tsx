@@ -5,9 +5,9 @@ import { getTreatment } from "@/lib/treatments";
 const TREATMENT = getTreatment("/hifu-treatment-page")!;
 
 export const metadata: Metadata = {
-  title: "HIFU treatment",
+  title: "HIFU Skin Tightening Point Cook & Melbourne",
   description:
-    "HIFU non-surgical lifting and tightening at Leyla D Point Cook — high-intensity focused ultrasound for jaw, neck, brow and face.",
+    "HIFU skin tightening in Point Cook lifts and firms a sagging jawline, neck and brow with no surgery or downtime. See visible results, book a consult today.",
 };
 
 export default function HifuPage() {
@@ -15,13 +15,13 @@ export default function HifuPage() {
     <TreatmentPage
       eyebrow="Skin · HIFU"
       title="HIFU lifting & tightening."
-      intro="High-Intensity Focused Ultrasound — a non-surgical lifting and tightening treatment that stimulates collagen deep in the skin without breaking the surface."
+      intro="High-Intensity Focused Ultrasound, a non-surgical lifting and tightening treatment that stimulates collagen deep in the skin without breaking the surface."
       image={TREATMENT.image}
       videoSrc="/videos/hifu.mp4"
       videoPoster="/videos/hifu.jpg"
       gallery={TREATMENT.gallery}
-      galleryCaption="Lift, tighten, restore — without breaking the surface."
-      what="HIFU delivers focused ultrasound energy to precise depths beneath the skin, triggering a controlled collagen response in the same layers traditionally treated by a surgical facelift. There&apos;s no cutting, no needles, and no recovery — just a gradual lifting and tightening effect that builds over 8-12 weeks."
+      galleryCaption="Lift, tighten, restore, without breaking the surface."
+      what="HIFU delivers focused ultrasound energy to precise depths beneath the skin, triggering a controlled collagen response in the same layers traditionally treated by a surgical facelift. There&apos;s no cutting, no needles, and no recovery, just a gradual lifting and tightening effect that builds over 8-12 weeks."
       bestFor={[
         "Sagging jowls & jawline",
         "Loose neck skin",
@@ -36,7 +36,7 @@ export default function HifuPage() {
         },
         {
           step: "Treatment",
-          body: "A 60-90 minute session depending on areas treated. You'll feel warm pulses with brief moments of deeper tingling — manageable for most clients without anaesthetic.",
+          body: "A 60-90 minute session depending on areas treated. You'll feel warm pulses with brief moments of deeper tingling, manageable for most clients without anaesthetic.",
         },
         {
           step: "Results",

@@ -13,10 +13,14 @@ export const SITE = {
   phone: "0400 903 755",
   phoneIntl: "+61400903755",
   booking:
-    "https://www.fresha.com/a/leyla-d-skin-body-brows-werribee-26-watton-street-jv1ksc4t/booking",
+    "https://www.fresha.com/a/leyla-d-skin-body-brows-melbourne-18-boardwalk-boulevard-x9zqmavd/booking",
   stats: {
     services: "3,100",
-    reviews: "700+",
+    reviews: "670+",
+  },
+  social: {
+    instagram: "https://www.instagram.com/leyladskinbodybrows/",
+    facebook: "https://www.facebook.com/leyladbrowsandbeauty/",
   },
 } as const;
 

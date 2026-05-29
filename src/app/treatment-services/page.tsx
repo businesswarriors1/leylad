@@ -7,9 +7,9 @@ import { SkinPhoto } from "@/components/skin-photo";
 import { TREATMENTS, type TreatmentCategory } from "@/lib/treatments";
 
 export const metadata: Metadata = {
-  title: "Treatments & services",
+  title: "Point Cook Skin Clinic: Full Treatment Menu",
   description:
-    "Skin treatments, laser, brows and lashes — our full menu of specialist treatments in Point Cook.",
+    "Explore our skin clinic in Point Cook: laser, HIFU, microneedling, brows and lashes all in one menu. Book a consult and we'll plan your skin together.",
 };
 
 const GROUPS: { key: TreatmentCategory; title: string }[] = [
@@ -28,7 +28,7 @@ export default function TreatmentsPage() {
             <h1 className="text-display">Our full menu.</h1>
             <p className="text-body max-w-xl">
               Browse by category, or talk to us about what your skin is asking
-              for — we&apos;ll build a plan that makes sense.
+              for, we&apos;ll build a plan that makes sense.
             </p>
           </div>
         </div>
@@ -87,7 +87,7 @@ export default function TreatmentsPage() {
             Let&apos;s build your plan together.
           </h2>
           <p className="text-body max-w-xl mx-auto text-muted-ink">
-            Book a consultation — we&apos;ll assess your skin and walk you
+            Book a consultation, we&apos;ll assess your skin and walk you
             through the right options.
           </p>
           <div className="pt-2">

@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-// Video equivalent of SkinPhoto — applies the same editorial B&W treatment,
+// Video equivalent of SkinPhoto, applies the same editorial B&W treatment,
 // supports the same aspect ratios, and autoplays muted/loop/playsInline so
 // it behaves like an animated hero image. Provide a `poster` so the cover
 // frame shows immediately before the video buffers.

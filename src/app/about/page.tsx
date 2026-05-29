@@ -5,9 +5,9 @@ import { SkinPhoto } from "@/components/skin-photo";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "Skin Specialists in Point Cook, Melbourne",
   description:
-    "Leyla D is a specialist skin clinic in Point Cook with 3,100+ services completed and 700+ five-star client reviews.",
+    "Meet the skin specialists in Point Cook behind Leyla D, internationally trained corneotherapists with 15+ years. Book your skin consultation today.",
 };
 
 export default function AboutPage() {
@@ -25,8 +25,8 @@ export default function AboutPage() {
             <p className="text-body max-w-xl">
               {SITE.fullName} is a specialist skin, body and brow clinic in{" "}
               {SITE.address.suburb}. We focus on what actually moves the needle
-              for your skin — advanced facials, peels, microneedling, laser
-              and HIFU — paired with honest, no-pressure consultation.
+              for your skin, advanced facials, peels, microneedling, laser
+              and HIFU, paired with honest, no-pressure consultation.
             </p>
           </div>
           <div className="lg:col-span-5">
@@ -60,13 +60,13 @@ export default function AboutPage() {
           </h2>
           <p className="text-body max-w-2xl">
             Every appointment begins with a proper skin assessment. We won&apos;t
-            recommend a treatment your skin doesn&apos;t need — and we&apos;ll
+            recommend a treatment your skin doesn&apos;t need, and we&apos;ll
             tell you when something simpler would do the job better. Our
             focus is long-term skin health, not the next trend.
           </p>
           <p className="text-body max-w-2xl">
             We treat pigmentation, acne and acne scarring, melasma, rosacea,
-            fine lines, sagging skin, sun damage and dark spots — using
+            fine lines, sagging skin, sun damage and dark spots, using
             clinically proven modalities and partnering with trusted brands
             like Medik8, Calecim and SQT.
           </p>
@@ -112,8 +112,8 @@ export default function AboutPage() {
             Book a skin consultation today.
           </h2>
           <p className="text-body max-w-xl mx-auto text-muted-ink">
-            We&apos;ll assess your skin and walk you through the right plan —
-            no pressure, no upsell.
+            We&apos;ll assess your skin and walk you through the right plan.
+            No pressure, no upsell.
           </p>
           <div className="pt-2">
             <BookButton />

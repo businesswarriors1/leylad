@@ -19,7 +19,7 @@ export const CONCERNS: Concern[] = [
     name: "Pigmentation",
     tagline: "Sun damage, melasma, age spots and uneven tone.",
     intro:
-      "Pigmentation responds best to a layered approach — targeted in-clinic treatments paired with a properly built home routine. There's no magic single fix, but the right plan can make a meaningful difference within weeks.",
+      "Pigmentation responds best to a layered approach, targeted in-clinic treatments paired with a properly built home routine. There's no magic single fix, but the right plan can make a meaningful difference within weeks.",
     description:
       "Pigmentation refers to patches or spots where the skin produces excess melanin. It can be triggered by sun exposure, hormones, inflammation, or a combination of all three. Because the underlying cause shapes the treatment plan, every consultation starts with an honest assessment of what's actually driving your pigmentation.",
     causes: [
@@ -30,6 +30,7 @@ export const CONCERNS: Concern[] = [
       "Heat and friction",
     ],
     recommendedTreatments: [
+      "/cosmelan",
       "/q-switch-laser",
       "/microneedling-treatment",
       "/facial-treatments",
@@ -61,7 +62,7 @@ export const CONCERNS: Concern[] = [
     name: "Anti-ageing",
     tagline: "Fine lines, loss of firmness and crepiness.",
     intro:
-      "Anti-ageing isn't about chasing a younger face — it's about supporting collagen, elastin and skin barrier health so your skin looks rested, even and lifted as you age.",
+      "Anti-ageing isn't about chasing a younger face, it's about supporting collagen, elastin and skin barrier health so your skin looks rested, even and lifted as you age.",
     description:
       "From your mid-twenties onward, collagen production slows and the skin's foundational structure begins to soften. Combined with cumulative sun damage and lifestyle stressors, this shows up as fine lines, loss of firmness, and a less even surface. The right treatment plan focuses on stimulating new collagen and supporting long-term skin health.",
     causes: [
@@ -84,7 +85,7 @@ export const CONCERNS: Concern[] = [
     intro:
       "Rosacea is best managed, not just treated. We focus on calming inflammation, rebuilding the skin barrier, and identifying the triggers that flare your skin.",
     description:
-      "Rosacea is a chronic, relapsing condition characterised by redness, visible vessels, and a reactive skin barrier. It can be made worse by heat, alcohol, stress, and the wrong skincare. Our approach combines gentle in-clinic treatments with a properly built calming home routine — and clear advice on what to avoid.",
+      "Rosacea is a chronic, relapsing condition characterised by redness, visible vessels, and a reactive skin barrier. It can be made worse by heat, alcohol, stress, and the wrong skincare. Our approach combines gentle in-clinic treatments with a properly built calming home routine, and clear advice on what to avoid.",
     causes: [
       "Genetic predisposition",
       "Heat, sun and weather extremes",

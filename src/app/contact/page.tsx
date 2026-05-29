@@ -5,8 +5,9 @@ import { SkinPhoto } from "@/components/skin-photo";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Contact",
-  description: `Visit Leyla D at ${SITE.address.line1}, ${SITE.address.suburb}. Book online via Fresha or call ${SITE.phone}.`,
+  title: "Contact & Visit Our Skin Clinic in Point Cook",
+  description:
+    "Visit Leyla D skin clinic in Point Cook at 18 Boardwalk Boulevard. Call, email or book online via Fresha. Rated 5.0 from 670+ happy clients.",
 };
 
 const mapsQuery = encodeURIComponent(
@@ -73,13 +74,13 @@ export default function ContactPage() {
             any time.
           </h2>
           <p className="text-body max-w-2xl">
-            We accept all bookings through Fresha — you can browse
+            We accept all bookings through Fresha, you can browse
             availability, pricing and treatment times, and reschedule yourself
             up to 24 hours before your appointment.
           </p>
           <p className="text-body max-w-2xl">
-            For anything else — questions about a specific concern, gift
-            vouchers, or supplier enquiries — call us on{" "}
+            For anything else, questions about a specific concern, gift
+            vouchers, or supplier enquiries, call us on{" "}
             <a
               href={`tel:${SITE.phoneIntl}`}
               className="underline underline-offset-4"

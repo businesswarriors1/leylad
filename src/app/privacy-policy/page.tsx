@@ -23,7 +23,7 @@ export default function PrivacyPage() {
             <h2 className="text-h3 text-ink">What we collect</h2>
             <p>
               When you book or attend an appointment, we collect personal
-              information you provide — your name, contact details, skin and
+              information you provide, your name, contact details, skin and
               medical history relevant to the treatment, and payment details
               for transactions.
             </p>

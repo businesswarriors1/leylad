@@ -5,8 +5,9 @@ import { getConcern } from "@/lib/concerns";
 const concern = getConcern("/rosacea")!;
 
 export const metadata: Metadata = {
-  title: `${concern.name} — skin concern`,
-  description: concern.intro,
+  title: "Calming Rosacea & Redness Treatment Melbourne",
+  description:
+    "Calm rosacea, redness and flushing with gentle, expert rosacea treatment in Melbourne. Soothe reactive skin and rebuild your barrier. Book a consult.",
 };
 
 export default function Page() {

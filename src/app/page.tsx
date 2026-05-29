@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Eyebrow } from "@/components/eyebrow";
@@ -7,6 +8,12 @@ import { SITE } from "@/lib/site";
 import { TREATMENTS } from "@/lib/treatments";
 import { REVIEWS } from "@/lib/reviews";
 import { ReviewsCarousel, ReviewsHeader } from "@/components/reviews-carousel";
+
+export const metadata: Metadata = {
+  title: "Skin Clinic Point Cook for Pigmentation & Acne · Leyla D",
+  description:
+    "Advanced skin clinic in Point Cook treating pigmentation, acne and ageing with HIFU, laser and IPL. Rated 5 stars by 670+ clients. Book your skin consult.",
+};
 
 const SIGNATURE_SLUGS = [
   "/hifu-treatment-page",
@@ -35,7 +42,7 @@ export default function Home() {
               starts here.
             </h1>
             <p className="text-body max-w-xl">
-              Advanced treatments for pigmentation, acne and anti-ageing — built
+              Advanced treatments for pigmentation, acne and anti-ageing, built
               around your skin, not a one-size protocol.
             </p>
             <div className="flex flex-wrap items-center gap-6">

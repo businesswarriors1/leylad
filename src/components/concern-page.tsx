@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { Eyebrow } from "@/components/eyebrow";
 import { BookButton } from "@/components/book-button";
 import { SkinPhoto } from "@/components/skin-photo";
@@ -16,13 +16,6 @@ export function ConcernPage({ concern }: { concern: Concern }) {
       {/* Hero */}
       <section>
         <div className="container-site pt-12 md:pt-20 pb-16 md:pb-24">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-sm text-muted-ink hover:text-ink mb-12"
-          >
-            <ArrowLeft className="h-4 w-4" /> Home
-          </Link>
-
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             <div className="lg:col-span-7 space-y-8">
               <Eyebrow>Skin concern</Eyebrow>

@@ -80,38 +80,48 @@ export function ReviewsCarousel({ reviews }: { reviews: Review[] }) {
   const scrollerRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const [isHovering, setIsHovering] = useState(false);
+  const [userInteracted, setUserInteracted] = useState(false);
+  const isProgrammaticScrollRef = useRef(false);
 
-  // Auto-advance every 7s, paused on hover
+  // Auto-advance every 7s, paused on hover or after user takes control
   useEffect(() => {
-    if (isHovering || reviews.length <= 1) return;
+    if (isHovering || userInteracted || reviews.length <= 1) return;
     const id = window.setInterval(() => {
       setActiveIndex((i) => (i + 1) % reviews.length);
     }, AUTO_ADVANCE_MS);
     return () => window.clearInterval(id);
-  }, [isHovering, reviews.length]);
+  }, [isHovering, userInteracted, reviews.length]);
 
-  // Scroll active card into view
+  // Scroll active card into view, centered (matches snap-center alignment)
   useEffect(() => {
     const scroller = scrollerRef.current;
     if (!scroller) return;
     const card = scroller.children[activeIndex] as HTMLElement | undefined;
     if (!card) return;
-    scroller.scrollTo({
-      left: card.offsetLeft - scroller.offsetLeft,
-      behavior: "smooth",
-    });
+    const target = Math.max(
+      0,
+      card.offsetLeft - scroller.offsetLeft - (scroller.clientWidth - card.clientWidth) / 2
+    );
+    isProgrammaticScrollRef.current = true;
+    scroller.scrollTo({ left: target, behavior: "smooth" });
+    const release = window.setTimeout(() => {
+      isProgrammaticScrollRef.current = false;
+    }, 600);
+    return () => window.clearTimeout(release);
   }, [activeIndex]);
 
-  // Update activeIndex when user manually scrolls
+  // Update activeIndex when user manually scrolls (ignore programmatic scrolls)
   function onScroll() {
+    if (isProgrammaticScrollRef.current) return;
     const scroller = scrollerRef.current;
     if (!scroller) return;
     const cards = Array.from(scroller.children) as HTMLElement[];
-    const scrollLeft = scroller.scrollLeft;
+    const viewportCenter = scroller.scrollLeft + scroller.clientWidth / 2;
     let closestIdx = 0;
     let closestDist = Infinity;
     cards.forEach((card, i) => {
-      const dist = Math.abs(card.offsetLeft - scroller.offsetLeft - scrollLeft);
+      const cardCenter = card.offsetLeft - scroller.offsetLeft + card.clientWidth / 2;
+      const dist = Math.abs(cardCenter - viewportCenter);
       if (dist < closestDist) {
         closestDist = dist;
         closestIdx = i;
@@ -121,12 +131,18 @@ export function ReviewsCarousel({ reviews }: { reviews: Review[] }) {
   }
 
   function go(direction: -1 | 1) {
+    setUserInteracted(true);
     setActiveIndex((i) => {
       const next = i + direction;
       if (next < 0) return reviews.length - 1;
       if (next >= reviews.length) return 0;
       return next;
     });
+  }
+
+  function jumpTo(i: number) {
+    setUserInteracted(true);
+    setActiveIndex(i);
   }
 
   return (
@@ -167,7 +183,7 @@ export function ReviewsCarousel({ reviews }: { reviews: Review[] }) {
               role="tab"
               aria-selected={i === activeIndex}
               aria-label={`Go to review ${i + 1}`}
-              onClick={() => setActiveIndex(i)}
+              onClick={() => jumpTo(i)}
               className={cn(
                 "h-1.5 transition-all duration-300 rounded-full",
                 i === activeIndex

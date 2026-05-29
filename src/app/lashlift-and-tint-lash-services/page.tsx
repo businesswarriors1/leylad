@@ -5,9 +5,9 @@ import { getTreatment } from "@/lib/treatments";
 const TREATMENT = getTreatment("/lashlift-and-tint-lash-services")!;
 
 export const metadata: Metadata = {
-  title: "Lash lift & tint",
+  title: "Lash Lift & Tint Point Cook | No Extensions",
   description:
-    "Lash lift and tint at Leyla D Point Cook — long, defined lashes without extensions.",
+    "Lash lift and tint in Point Cook for longer, darker, lifted lashes that last 6 to 8 weeks. No extensions, no mascara. Book your appointment today.",
 };
 
 export default function LashesPage() {
@@ -15,7 +15,7 @@ export default function LashesPage() {
     <TreatmentPage
       eyebrow="Lashes"
       title="Lash lift & tint."
-      intro="Long, defined lashes without extensions — a gentle curl that opens up the eye and lasts 6-8 weeks."
+      intro="Long, defined lashes without extensions, a gentle curl that opens up the eye and lasts 6-8 weeks."
       image={TREATMENT.image}
       videoSrc="/videos/lash-lift.mp4"
       videoPoster="/videos/lash-lift.jpg"

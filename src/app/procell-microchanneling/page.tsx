@@ -5,9 +5,9 @@ import { getTreatment } from "@/lib/treatments";
 const TREATMENT = getTreatment("/procell-microchanneling")!;
 
 export const metadata: Metadata = {
-  title: "Procell microchanneling",
+  title: "Procell Microchanneling Melbourne, Point Cook",
   description:
-    "Procell microchanneling at Leyla D — next-generation microchanneling with stem-cell-derived growth factors for scarring, ageing and texture.",
+    "Procell microchanneling in Melbourne stimulates collagen with stem-cell growth factors to soften scars and refine texture. Book your skin consult today.",
 };
 
 export default function ProcellPage() {
@@ -15,13 +15,13 @@ export default function ProcellPage() {
     <TreatmentPage
       eyebrow="Skin · Procell"
       title="Procell microchanneling."
-      intro="The next generation of microchanneling — combining ultra-fine micro-channels with a serum of stem-cell-derived growth factors to dramatically improve scarring, ageing, and texture."
+      intro="The next generation of microchanneling, combining ultra-fine micro-channels with a serum of stem-cell-derived growth factors to dramatically improve scarring, ageing, and texture."
       image={TREATMENT.image}
       videoSrc="/videos/procell.mp4"
       videoPoster="/videos/procell.jpg"
       gallery={TREATMENT.gallery}
       galleryCaption="Growth factors meet your skin&apos;s own repair response."
-      what="Procell uses a precision device to create thousands of microscopic channels in the skin while simultaneously infusing a clinical-grade serum rich in human-derived growth factors and cytokines. Those growth factors are exactly what your skin uses to repair itself — so by getting them through the surface and into the active layers, we trigger a much stronger collagen and elastin response than microneedling alone. The result is firmer, smoother, more even skin, with particularly impressive results on acne scarring and crepiness."
+      what="Procell uses a precision device to create thousands of microscopic channels in the skin while simultaneously infusing a clinical-grade serum rich in human-derived growth factors and cytokines. Those growth factors are exactly what your skin uses to repair itself, so by getting them through the surface and into the active layers, we trigger a much stronger collagen and elastin response than microneedling alone. The result is firmer, smoother, more even skin, with particularly impressive results on acne scarring and crepiness."
       bestFor={[
         "Acne scarring",
         "Surgical & traumatic scars",
@@ -37,7 +37,7 @@ export default function ProcellPage() {
         },
         {
           step: "Treatment",
-          body: "We cleanse, apply topical numbing, and treat the area with the Procell device — taking around 45-60 minutes. The growth-factor serum is infused throughout. Most clients describe it as a mild prickling sensation.",
+          body: "We cleanse, apply topical numbing, and treat the area with the Procell device, taking around 45-60 minutes. The growth-factor serum is infused throughout. Most clients describe it as a mild prickling sensation.",
         },
         {
           step: "Recovery & results",
@@ -48,7 +48,7 @@ export default function ProcellPage() {
       faqs={[
         {
           q: "How is Procell different from regular microneedling?",
-          a: "Regular microneedling creates channels and relies on your skin's own repair response. Procell adds a clinical-grade growth-factor serum into those channels at the time of treatment — giving your skin the exact biological signals it needs to repair more aggressively. Results are typically faster and more pronounced, especially for scarring.",
+          a: "Regular microneedling creates channels and relies on your skin's own repair response. Procell adds a clinical-grade growth-factor serum into those channels at the time of treatment, giving your skin the exact biological signals it needs to repair more aggressively. Results are typically faster and more pronounced, especially for scarring.",
         },
         {
           q: "Is it safe?",

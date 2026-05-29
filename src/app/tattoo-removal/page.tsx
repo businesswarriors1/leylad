@@ -5,9 +5,9 @@ import { getTreatment } from "@/lib/treatments";
 const TREATMENT = getTreatment("/tattoo-removal")!;
 
 export const metadata: Metadata = {
-  title: "Laser tattoo removal",
+  title: "Laser Tattoo Removal in Point Cook, Melbourne",
   description:
-    "Laser tattoo removal at Leyla D Point Cook — gradual, safe clearance of unwanted ink using Q-switched nanosecond technology.",
+    "Safe, effective laser tattoo removal in Point Cook using Q-switched technology to fade unwanted ink. Trusted Melbourne clinic. Book your free consult.",
 };
 
 export default function TattooRemovalPage() {
@@ -15,11 +15,12 @@ export default function TattooRemovalPage() {
     <TreatmentPage
       eyebrow="Laser · Tattoo Removal"
       title="Tattoo removal."
-      intro="Q-switched nanosecond laser breaks tattoo pigment into particles small enough for your body to clear naturally — gradual, safe fading session by session."
+      intro="Q-switched nanosecond laser breaks tattoo pigment into particles small enough for your body to clear naturally, gradual, safe fading session by session."
       image={TREATMENT.image}
+      videoSrc="/videos/treatments/tattoo-removal.mp4"
       gallery={TREATMENT.gallery}
-      galleryCaption="Patient, methodical clearance — your skin&apos;s timeline, not a rushed one."
-      what="Q-switched laser fires ultra-short pulses of light that pass through the upper skin and shatter ink particles deeper down. Your immune system then carries those fragments away over the weeks following each session. Because the pulse is so brief, surrounding skin stays cool — meaning low downtime and a much lower risk of scarring than older tattoo-removal methods. Most tattoos need a course of sessions; we'll assess realistically at consultation."
+      galleryCaption="Patient, methodical clearance, your skin&apos;s timeline, not a rushed one."
+      what="Q-switched laser fires ultra-short pulses of light that pass through the upper skin and shatter ink particles deeper down. Your immune system then carries those fragments away over the weeks following each session. Because the pulse is so brief, surrounding skin stays cool, meaning low downtime and a much lower risk of scarring than older tattoo-removal methods. Most tattoos need a course of sessions; we'll assess realistically at consultation."
       bestFor={[
         "Black & dark-pigment tattoos",
         "Faded older tattoos",
@@ -30,7 +31,7 @@ export default function TattooRemovalPage() {
       process={[
         {
           step: "Consultation & patch test",
-          body: "We assess your tattoo — age, ink type, depth, location — and patch-test a small area to gauge how your skin responds. We'll only proceed when we're confident in the plan.",
+          body: "We assess your tattoo, age, ink type, depth, location, and patch-test a small area to gauge how your skin responds. We'll only proceed when we're confident in the plan.",
         },
         {
           step: "Treatment session",
@@ -41,7 +42,7 @@ export default function TattooRemovalPage() {
           body: "The treated area frosts briefly, then settles to redness/mild swelling for 24-48 hours. Fading happens over 6-8 weeks. Sessions are spaced 6-8 weeks apart to let your body clear pigment safely.",
         },
       ]}
-      aftercare="Keep the area clean, dry and out of direct sun for 2 weeks. SPF 50+ on the area every day — even on cloudy days. No swimming pools, saunas, or vigorous exercise for 48 hours. We'll send you home with a detailed aftercare sheet."
+      aftercare="Keep the area clean, dry and out of direct sun for 2 weeks. SPF 50+ on the area every day, even on cloudy days. No swimming pools, saunas, or vigorous exercise for 48 hours. We'll send you home with a detailed aftercare sheet."
       faqs={[
         {
           q: "How many sessions will I need?",
@@ -53,14 +54,14 @@ export default function TattooRemovalPage() {
         },
         {
           q: "Does it work on all skin tones?",
-          a: "Yes — but settings need to be carefully calibrated for deeper skin tones. We always patch-test first.",
+          a: "Yes, but settings need to be carefully calibrated for deeper skin tones. We always patch-test first.",
         },
         {
           q: "Can I lighten a tattoo I want to cover up?",
-          a: "Absolutely — partial lightening for cover-up work usually only needs 2-4 sessions. Tell us at consultation if that's your goal.",
+          a: "Absolutely, partial lightening for cover-up work usually only needs 2-4 sessions. Tell us at consultation if that's your goal.",
         },
       ]}
-      freshaNote="Full pricing per session for laser tattoo removal lives on our Fresha booking page — pricing is per area and per session."
+      freshaNote="Full pricing per session for laser tattoo removal lives on our Fresha booking page, pricing is per area and per session."
     />
   );
 }

@@ -7,9 +7,9 @@ import { SkinPhoto } from "@/components/skin-photo";
 import { TREATMENTS } from "@/lib/treatments";
 
 export const metadata: Metadata = {
-  title: "Skin treatments",
+  title: "Skin Treatments in Point Cook, Built Around You",
   description:
-    "Specialist skin treatments — pigmentation, acne, anti-ageing, rejuvenation, and tailored facials at Leyla D in Point Cook.",
+    "Specialist skin treatments in Point Cook for pigmentation, acne and ageing skin, tailored to what your skin needs. Book a skin consultation today.",
 };
 
 const FEATURED_SKIN_TREATMENTS = [
@@ -24,23 +24,23 @@ const FEATURED_SKIN_TREATMENTS = [
 const CONCERNS = [
   {
     title: "Pigmentation",
-    body: "Sun damage, melasma, age spots and uneven tone — addressed at the source, not masked.",
-    slug: "/q-switch-laser",
+    body: "Sun damage, melasma, age spots and uneven tone, addressed at the source, not masked.",
+    slug: "/pigmentation",
   },
   {
     title: "Acne & scarring",
-    body: "Active breakouts and the marks they leave behind — combination protocols built around your skin.",
-    slug: "/procell-microchanneling",
+    body: "Active breakouts and the marks they leave behind, combination protocols built around your skin.",
+    slug: "/acne-scarring",
   },
   {
     title: "Anti-ageing",
-    body: "Loss of firmness, fine lines, crepiness — collagen-stimulating treatments that work with your skin biology.",
-    slug: "/hifu-treatment-page",
+    body: "Loss of firmness, fine lines, crepiness, collagen-stimulating treatments that work with your skin biology.",
+    slug: "/anti-ageing",
   },
   {
     title: "Texture & tone",
-    body: "Rough texture, large pores, dullness — resurfacing and rejuvenating without harsh downtime.",
-    slug: "/microneedling-treatment",
+    body: "Rough texture, large pores, dullness, resurfacing and rejuvenating without harsh downtime.",
+    slug: "/texture-tone",
   },
 ];
 
@@ -62,7 +62,7 @@ export default function SkinTreatmentsPage() {
               built around yours.
             </h1>
             <p className="text-body max-w-xl">
-              From pigmentation and acne to anti-ageing and skin rejuvenation —
+              From pigmentation and acne to anti-ageing and skin rejuvenation,
               specialist treatments matched to what your skin actually needs,
               not a one-size protocol.
             </p>
@@ -164,7 +164,7 @@ export default function SkinTreatmentsPage() {
             not templated.
           </h2>
           <p className="text-body max-w-2xl">
-            Every facial we deliver is built around your skin on the day —
+            Every facial we deliver is built around your skin on the day,
             not a fixed protocol. We use clinical-grade product lines like
             Medik8 and Calecim, paired with treatment techniques matched to
             your concern: clarity, glow, calming inflammation, deep
@@ -181,8 +181,8 @@ export default function SkinTreatmentsPage() {
             Book your skin consultation.
           </h2>
           <p className="text-body max-w-xl mx-auto text-muted-ink">
-            We&apos;ll assess your skin and walk you through the right plan —
-            no pressure, no upsell.
+            We&apos;ll assess your skin and walk you through the right plan.
+            No pressure, no upsell.
           </p>
           <div className="pt-2">
             <BookButton />

@@ -1,5 +1,3 @@
-import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
 import { Eyebrow } from "@/components/eyebrow";
 import { BookButton } from "@/components/book-button";
 import { SkinPhoto } from "@/components/skin-photo";
@@ -45,13 +43,6 @@ export function TreatmentPage({
     <>
       <section>
         <div className="container-site pt-12 md:pt-20 pb-16 md:pb-24">
-          <Link
-            href="/treatment-services"
-            className="inline-flex items-center gap-2 text-sm text-muted-ink hover:text-ink mb-12"
-          >
-            <ArrowLeft className="h-4 w-4" /> All treatments
-          </Link>
-
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             <div className="lg:col-span-7 space-y-8">
               <Eyebrow>{eyebrow}</Eyebrow>
@@ -118,7 +109,7 @@ export function TreatmentPage({
           <div className="container-site py-24 md:py-32 space-y-12">
             <div className="space-y-6">
               <Eyebrow>What to expect</Eyebrow>
-              <h2 className="text-h1">How it goes.</h2>
+              <h2 className="text-h1">How this works.</h2>
             </div>
             <ol className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-12">
               {process.map((p, i) => (

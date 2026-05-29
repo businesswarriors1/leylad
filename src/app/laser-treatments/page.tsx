@@ -7,9 +7,9 @@ import { SkinPhoto } from "@/components/skin-photo";
 import { SkinVideo } from "@/components/skin-video";
 
 export const metadata: Metadata = {
-  title: "Laser treatments",
+  title: "Laser Skin Treatments Point Cook, Melbourne",
   description:
-    "Specialist laser treatments in Point Cook — Q-Switch laser for pigmentation, sun damage and skin renewal.",
+    "Specialist laser skin treatments in Point Cook for pigmentation, sun damage and renewal. Calibrated by an expert clinician. Book your consultation today.",
 };
 
 const LASER_TREATMENTS = [
@@ -17,7 +17,7 @@ const LASER_TREATMENTS = [
     slug: "/q-switch-laser",
     name: "Q-Switch Laser",
     tagline:
-      "Nanosecond pulse laser for pigmentation, sun damage, age spots and skin renewal — without downtime.",
+      "Nanosecond pulse laser for pigmentation, sun damage, age spots and skin renewal, without downtime.",
     bestFor: ["Pigmentation", "Sun spots", "Skin renewal"],
   },
 ];
@@ -36,7 +36,7 @@ export default function LaserPage() {
             </h1>
             <p className="text-body max-w-xl">
               Targeted laser treatments for pigmentation, sun damage and skin
-              renewal — delivered by a specialist clinician, calibrated to
+              renewal, delivered by a specialist clinician, calibrated to
               your skin type and goals.
             </p>
             <BookButton>Book a laser consultation</BookButton>
@@ -64,8 +64,8 @@ export default function LaserPage() {
           </h2>
           <p className="text-body max-w-2xl">
             Laser works because it delivers a very specific wavelength of
-            light to a very specific target — pigment, damaged cells, or
-            upper layers of skin — without harming the tissue around it.
+            light to a very specific target, pigment, damaged cells, or
+            upper layers of skin, without harming the tissue around it.
             Done well, it produces results that topicals alone can&apos;t
             match.
           </p>
@@ -130,7 +130,7 @@ export default function LaserPage() {
             {[
               {
                 step: "Skin assessment",
-                body: "We start with a proper consultation — your skin history, goals, and whether laser is the right tool for the job.",
+                body: "We start with a proper consultation, your skin history, goals, and whether laser is the right tool for the job.",
               },
               {
                 step: "Tailored protocol",
@@ -138,7 +138,7 @@ export default function LaserPage() {
               },
               {
                 step: "Recovery & results",
-                body: "Most lasers we use have minimal downtime — light redness for a few hours. Pigment lifts and clears over the following weeks.",
+                body: "Most lasers we use have minimal downtime, light redness for a few hours. Pigment lifts and clears over the following weeks.",
               },
             ].map((p, i) => (
               <li key={i} className="space-y-4">

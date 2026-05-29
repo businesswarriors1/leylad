@@ -1,7 +1,7 @@
 import { SkinPhoto } from "@/components/skin-photo";
 import { Eyebrow } from "@/components/eyebrow";
 
-// Editorial asymmetric gallery — one tall feature image + two stacked square
+// Editorial asymmetric gallery, one tall feature image + two stacked square
 // images. Renders nothing when fewer than 2 images supplied.
 export function TreatmentGallery({
   images,

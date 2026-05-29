@@ -7,17 +7,17 @@ export type Treatment = {
   tagline: string;
   /** Hero image used on the treatment's own page */
   image?: string;
-  /** Image used in tiles on the homepage / treatments index — falls back to `image` if not set */
+  /** Image used in tiles on the homepage / treatments index, falls back to `image` if not set */
   tileImage?: string;
   /** CSS object-position for cropping (e.g. "right center", "left 30%"). Defaults to center. */
   objectPosition?: string;
   gallery?: string[];
   isNew?: boolean;
-  /** When true, this entry shows in the header dropdown only — not in tile grids or sitemap entries */
+  /** When true, this entry shows in the header dropdown only, not in tile grids or sitemap entries */
   inMenuOnly?: boolean;
 };
 
-// Curated editorial gallery pool — Instagram + reference imagery
+// Curated editorial gallery pool, Instagram + reference imagery
 const MOOD_HERO = "/images/home/hero.jpg";
 const MOOD_CONSISTENCY = "/images/treatments/ig-consistency.jpg";
 const MOOD_HEALTHY = "/images/treatments/ig-healthy-skin.jpg";
@@ -46,6 +46,15 @@ export const TREATMENTS: Treatment[] = [
     tagline: "Non-surgical skin tightening that stimulates collagen on contact.",
     image: "/images/treatments/plasma-fibroblast.jpg",
     gallery: [MOOD_CONSISTENCY, MOOD_HERO],
+  },
+  {
+    slug: "/cosmelan",
+    name: "Cosmelan",
+    category: "skin",
+    tagline: "Professional depigmentation treatment for melasma and stubborn pigmentation.",
+    image: "/images/treatments/cosmelan.jpg",
+    gallery: [MOOD_HEALTHY, MOOD_HERO, MOOD_CONSISTENCY],
+    isNew: true,
   },
   {
     slug: "/sqt-bio-microneedling-treatment",
@@ -96,7 +105,7 @@ export const TREATMENTS: Treatment[] = [
     tagline: "Safe, fast removal of skin tags, milia and minor lesions.",
     image: "/images/treatments/skin-tag.jpg",
     // The subject (practitioner working on a client) sits on the right of the
-    // source image — push the image leftward in its frame so the action stays
+    // source image, push the image leftward in its frame so the action stays
     // visible at all aspect ratios.
     objectPosition: "right center",
     gallery: [MOOD_HEALTHY, MOOD_HERO],
@@ -113,7 +122,7 @@ export const TREATMENTS: Treatment[] = [
     slug: "/lashlift-and-tint-lash-services",
     name: "Lash Lift & Tint",
     category: "brows",
-    tagline: "Long, defined lashes — no extensions, no fuss.",
+    tagline: "Long, defined lashes, no extensions, no fuss.",
     image: "/images/treatments/lash-lift.png",
     gallery: [MOOD_HEALTHY, MOOD_HERO],
   },
@@ -121,7 +130,7 @@ export const TREATMENTS: Treatment[] = [
     slug: "/medik8",
     name: "Medik8 Facials",
     category: "skin",
-    tagline: "Results-driven Medik8 facial protocols — peels, hydration and prescriptive skin courses.",
+    tagline: "Results-driven Medik8 facial protocols, peels, hydration and prescriptive skin courses.",
     image: "/images/treatments/facials.jpg",
     gallery: [MOOD_HEALTHY, MOOD_CONSISTENCY, MOOD_HERO],
     isNew: true,
@@ -130,8 +139,8 @@ export const TREATMENTS: Treatment[] = [
     slug: "/tattoo-removal",
     name: "Tattoo Removal",
     category: "laser",
-    tagline: "Laser tattoo removal that gradually clears unwanted ink — safely, in stages.",
-    image: "/images/treatments/laser.jpg",
+    tagline: "Laser tattoo removal that gradually clears unwanted ink, safely, in stages.",
+    image: "/images/treatments/tattoo-removal.jpg",
     gallery: [MOOD_HERO, MOOD_CONSISTENCY],
     isNew: true,
   },
@@ -140,7 +149,7 @@ export const TREATMENTS: Treatment[] = [
     name: "IPL Skin Rejuvenation",
     category: "laser",
     tagline: "Intense pulsed light for pigmentation, redness and overall skin clarity.",
-    image: "/images/treatments/laser.jpg",
+    image: "/images/treatments/ipl-skin-rejuvenation.jpg",
     gallery: [MOOD_HEALTHY, MOOD_HERO, MOOD_CONSISTENCY],
     isNew: true,
   },
@@ -148,8 +157,8 @@ export const TREATMENTS: Treatment[] = [
     slug: "/ipl-hair-removal",
     name: "IPL Hair Removal",
     category: "laser",
-    tagline: "Long-lasting hair reduction with intense pulsed light — face and body.",
-    image: "/images/treatments/laser.jpg",
+    tagline: "Long-lasting hair reduction with intense pulsed light, face and body.",
+    image: "/images/treatments/ipl-hair-removal.jpg",
     gallery: [MOOD_HERO, MOOD_HEALTHY],
     isNew: true,
   },

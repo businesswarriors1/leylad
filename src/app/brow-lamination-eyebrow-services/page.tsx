@@ -5,9 +5,9 @@ import { getTreatment } from "@/lib/treatments";
 const TREATMENT = getTreatment("/brow-lamination-eyebrow-services")!;
 
 export const metadata: Metadata = {
-  title: "Brow lamination",
+  title: "Brow Lamination Point Cook for Sculpted Brows",
   description:
-    "Brow lamination, shaping and tinting at Leyla D Point Cook — lifted, sculpted brows that hold for weeks.",
+    "Brow lamination in Point Cook for lifted, fuller, sculpted brows that last weeks. Expert shaping and tint at our 5-star clinic. Book your brow appointment.",
 };
 
 export default function BrowsPage() {
@@ -15,7 +15,7 @@ export default function BrowsPage() {
     <TreatmentPage
       eyebrow="Brows"
       title="Brow lamination."
-      intro="Lifted, sculpted, naturally-fuller brows — straightened and set in place to give you a polished shape that holds for weeks."
+      intro="Lifted, sculpted, naturally-fuller brows, straightened and set in place to give you a polished shape that holds for weeks."
       image={TREATMENT.image}
       gallery={TREATMENT.gallery}
       galleryCaption="Shape, hold, finish."

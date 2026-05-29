@@ -23,13 +23,13 @@ const SITE_URL = "https://leylad.com.au";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Leyla D — Specialist skin treatments in Point Cook",
+    default: "Leyla D, Specialist skin treatments in Point Cook",
     template: "%s · Leyla D",
   },
   description:
-    "Advanced skin treatments for pigmentation, acne and anti-ageing. HIFU, Q-Switch laser, Procell microchanneling and more — at our Point Cook clinic.",
+    "Advanced skin treatments for pigmentation, acne and anti-ageing. HIFU, Q-Switch laser, Procell microchanneling and more, at our Point Cook clinic.",
   openGraph: {
-    title: "Leyla D — Specialist skin treatments in Point Cook",
+    title: "Leyla D, Specialist skin treatments in Point Cook",
     description:
       "Advanced skin treatments for pigmentation, acne and anti-ageing. Point Cook, Melbourne.",
     url: SITE_URL,

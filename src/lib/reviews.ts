@@ -4,37 +4,41 @@ export type Review = {
   body: string;
 };
 
-// PLACEHOLDER reviews — to be replaced with real Google Business Profile reviews
-// that mention specific skin treatments. Client will paste 10-15 from Google.
+// Real 5-star reviews from the Leyla D Fresha profile (Point Cook, Melbourne).
+// Lightly tidied for punctuation only, wording preserved.
 export const REVIEWS: Review[] = [
   {
-    name: "Sarah M.",
-    treatment: "Pigmentation treatment plan",
-    body: "After years of trying to fade my pigmentation I finally feel confident going makeup-free. The tailored treatment plan they built for me was a turning point.",
+    name: "Ilmije A.",
+    treatment: "Skin treatments",
+    body: "Incredible service at Leyla D skin body and brows. I always leave feeling amazing. Leyla and Emily are amazing at what they do. You've both worked wonders on my skin, and every session leaves me feeling so refreshed. Thank you both so much!",
   },
   {
-    name: "Renee T.",
-    treatment: "HIFU",
-    body: "The HIFU results were noticeable within weeks — my jawline and cheeks feel lifted without anything invasive. The clinic is calm, clean and you feel completely looked after.",
+    name: "Anna L.",
+    treatment: "Skin treatments",
+    body: "Leyla and Emily are always so lovely and knowledgeable when it comes to skin. Love coming for treatments.",
   },
   {
-    name: "Jess H.",
-    treatment: "Procell microchanneling",
-    body: "Procell microchanneling has completely transformed my acne scarring. Each session my skin looks smoother and more even. Genuinely the best skin investment I've made.",
+    name: "Andrea D.",
+    treatment: "Skin consultation",
+    body: "Brilliant work, great advice. I highly recommend Leyla.",
   },
   {
-    name: "Emma D.",
-    treatment: "Facial",
-    body: "Skin expertise here is on another level. Every product, every step is explained. My rosacea has calmed dramatically with the bespoke facial routine they built for me.",
+    name: "Nicole J.",
+    treatment: "Brow lamination",
+    body: "Very happy with my brows. Super gentle and really listened to what I wanted. Will definitely be returning!",
   },
   {
-    name: "Priya R.",
-    treatment: "Q-Switch laser",
-    body: "Q-Switch laser cleared up sun spots I'd had for ten years in just a few visits. The whole team is so knowledgeable — they take the time to actually look at your skin.",
+    name: "Keryn M.",
+    treatment: "Brow shaping",
+    body: "Emily always works her magic on my brows and is an absolute genius. She deserves ten stars if not more. Thank you for an amazing experience.",
   },
   {
-    name: "Hannah B.",
-    treatment: "SQT bio microneedling",
-    body: "The SQT bio microneedling left my skin looking lit-from-within for weeks. I get so many comments. Point Cook is lucky to have a clinic at this level.",
+    name: "Ava D.",
+    treatment: "Lash lift & tint",
+    body: "I'm happy with my lashes and love the individual service and advice I get from the girls.",
+  },
+  {
+    name: "Lianne V.",
+    body: "Emily and Leyla are so amazing, perfect service every time.",
   },
 ];

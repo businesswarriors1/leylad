@@ -113,7 +113,7 @@ export function SiteHeader() {
               <div className="bg-paper border-b border-hairline shadow-[0_12px_32px_-16px_rgba(0,0,0,0.10)]">
                 <div className="grid grid-cols-12 gap-8 px-10 py-12">
                   <div className="col-span-3">
-                    <p className="text-eyebrow text-muted-ink mb-4">— browse</p>
+                    <p className="text-eyebrow text-muted-ink mb-4">browse</p>
                     <h3 className="text-h3 max-w-[12ch]">
                       Our full menu of treatments.
                     </h3>
@@ -134,7 +134,7 @@ export function SiteHeader() {
                     return (
                       <div key={cat.key} className="col-span-3">
                         <p className="text-eyebrow text-muted-ink mb-4">
-                          — {cat.title}
+                         , {cat.title}
                         </p>
                         <ul className="space-y-3">
                           {items.map((t) => (
@@ -205,7 +205,7 @@ export function SiteHeader() {
                 <div className="grid grid-cols-12 gap-8 px-10 py-12">
                   <div className="col-span-4">
                     <p className="text-eyebrow text-muted-ink mb-4">
-                      — browse
+                     , browse
                     </p>
                     <h3 className="text-h3 max-w-[14ch]">
                       Explore by skin concern.
@@ -323,7 +323,7 @@ export function SiteHeader() {
                   return (
                     <div key={cat.key}>
                       <p className="text-eyebrow text-muted-ink mb-3">
-                        — {cat.title}
+                       , {cat.title}
                       </p>
                       <ul className="space-y-3">
                         {items.map((t) => (

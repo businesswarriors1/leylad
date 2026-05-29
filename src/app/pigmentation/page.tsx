@@ -5,8 +5,9 @@ import { getConcern } from "@/lib/concerns";
 const concern = getConcern("/pigmentation")!;
 
 export const metadata: Metadata = {
-  title: `${concern.name} — skin concern`,
-  description: concern.intro,
+  title: "Pigmentation & Melasma Treatment Point Cook",
+  description:
+    "Fade pigmentation, melasma and uneven tone with expert laser and Cosmelan treatments in Point Cook. See brighter, clearer skin. Book your skin consult.",
 };
 
 export default function Page() {
