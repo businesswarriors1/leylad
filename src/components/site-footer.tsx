@@ -188,7 +188,20 @@ export function SiteFooter() {
 
       <div className="border-t border-hairline">
         <div className="container-site py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 text-xs text-muted-ink">
-          <p>© {new Date().getFullYear()} {SITE.fullName}. All rights reserved.</p>
+          <div className="space-y-1">
+            <p>© {new Date().getFullYear()} {SITE.fullName}. All rights reserved.</p>
+            <p>
+              Website built by Business Warriors{" "}
+              <a
+                href="https://www.businesswarriors.global"
+                target="_blank"
+                rel="noreferrer"
+                className="underline underline-offset-4 hover:text-ink"
+              >
+                Digital Marketing Agency
+              </a>
+            </p>
+          </div>
           <Image
             src="/images/logo/footer.png"
             alt={SITE.fullName}
