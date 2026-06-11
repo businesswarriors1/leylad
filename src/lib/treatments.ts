@@ -50,6 +50,15 @@ export const TREATMENTS: Treatment[] = [
     gallery: [MOOD_CONSISTENCY, MOOD_HERO],
   },
   {
+    slug: "/jet-plasma",
+    name: "Jet Plasma",
+    category: "skin",
+    tagline: "Needle-free cold plasma for tighter, clearer, calmer skin, with zero downtime.",
+    image: "/images/treatments/facials.jpg",
+    gallery: [MOOD_HEALTHY, MOOD_CONSISTENCY, MOOD_HERO],
+    isNew: true,
+  },
+  {
     slug: "/cosmelan",
     name: "Cosmelan",
     category: "skin",
@@ -74,6 +83,15 @@ export const TREATMENTS: Treatment[] = [
     image: "/images/treatments/microneedling.jpg",
     tileImage: "/images/treatments/microneedling-tile.jpg",
     gallery: [MOOD_HERO, MOOD_CONSISTENCY],
+  },
+  {
+    slug: "/microneedling-for-hair-loss",
+    name: "Hair Loss",
+    category: "skin",
+    tagline: "Scalp microneedling to support thicker, healthier-looking hair, non-surgical.",
+    image: "/images/home/hero.jpg",
+    gallery: [MOOD_HEALTHY, MOOD_HERO, MOOD_CONSISTENCY],
+    isNew: true,
   },
   {
     slug: "/procell-microchanneling",

@@ -23,13 +23,14 @@ export default function MicroneedlingPage() {
         image={TREATMENT.image}
         gallery={TREATMENT.gallery}
         galleryCaption="Texture, scarring, tone, rebuilt from the inside."
-        what="A controlled-needling device creates thousands of microscopic channels in the skin, triggering a wound-healing response that lays down new collagen and elastin. Over a series of sessions, skin becomes firmer, smoother and more even, particularly effective on scarring, fine lines, and pore size."
+        what="A controlled-needling device creates thousands of microscopic channels in the skin, triggering a wound-healing response that lays down new collagen and elastin. Over a series of sessions, skin becomes firmer, smoother and more even, particularly effective on scarring, fine lines, and pore size. The same technique is also used on the scalp: controlled micro-needling stimulates dormant hair follicles and helps active ingredients absorb, a supportive treatment for thinning hair and early hair loss."
         bestFor={[
           "Acne scarring",
           "Fine lines",
           "Enlarged pores",
           "Uneven texture",
           "Skin firmness",
+          "Hair loss & thinning (scalp)",
         ]}
       />
 
