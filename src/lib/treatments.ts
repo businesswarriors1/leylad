@@ -15,6 +15,8 @@ export type Treatment = {
   isNew?: boolean;
   /** When true, this entry shows in the header dropdown only, not in tile grids or sitemap entries */
   inMenuOnly?: boolean;
+  /** When true, hidden from the header nav dropdown (still appears in the footer, index and sitemap) */
+  hideInHeader?: boolean;
 };
 
 // Curated editorial gallery pool, Instagram + reference imagery
@@ -90,6 +92,7 @@ export const TREATMENTS: Treatment[] = [
     image: "/images/treatments/laser.jpg",
     gallery: [MOOD_HERO, MOOD_HEALTHY, MOOD_CONSISTENCY],
     isNew: true,
+    hideInHeader: true,
   },
   {
     slug: "/laser-treatments",

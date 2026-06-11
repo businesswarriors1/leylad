@@ -145,7 +145,7 @@ export function SiteHeader() {
 
                   {CATEGORIES.map((cat) => {
                     const items = TREATMENTS.filter(
-                      (t) => t.category === cat.key
+                      (t) => t.category === cat.key && !t.hideInHeader
                     );
                     if (items.length === 0) return null;
                     return (
@@ -355,7 +355,7 @@ export function SiteHeader() {
               <div className="pt-5 space-y-5">
                 {CATEGORIES.map((cat) => {
                   const items = TREATMENTS.filter(
-                    (t) => t.category === cat.key
+                    (t) => t.category === cat.key && !t.hideInHeader
                   );
                   if (items.length === 0) return null;
                   return (

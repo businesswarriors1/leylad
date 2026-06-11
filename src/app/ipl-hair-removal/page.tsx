@@ -26,7 +26,7 @@ export default function IplHairRemovalPage() {
         "Bikini & Brazilian",
         "Upper lip & chin",
         "Back & chest",
-        "Anyone wanting an end to shaving / waxing"
+        "Anyone wanting an end to shaving and waxing"
       ]}
       process={[
         {

@@ -7,7 +7,7 @@ const TREATMENT = getTreatment("/hifu-treatment-page")!;
 export const metadata: Metadata = {
   title: "HIFU Skin Tightening Point Cook & Melbourne",
   description:
-    "HIFU skin tightening in Point Cook lifts and firms a sagging jawline, neck and brow with no surgery or downtime. See visible results, book a consult today.",
+    "HIFU skin tightening in Point Cook lifts and firms a sagging jawline, neck and brow with no surgery or downtime. See results, book a consult today.",
 };
 
 export default function HifuPage() {
