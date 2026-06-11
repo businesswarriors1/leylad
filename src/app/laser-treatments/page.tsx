@@ -74,6 +74,12 @@ export default function LaserPage() {
             the right device, and an experienced clinician matter more than
             anything else.
           </p>
+          <p className="text-body max-w-2xl">
+            The same technology also powers our laser tone facial, a gentle,
+            low-downtime treatment that evens out pigmentation and tone and
+            leaves the skin clearer and more radiant, a favourite before an
+            event.
+          </p>
         </div>
       </section>
 

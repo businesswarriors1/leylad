@@ -23,7 +23,11 @@ export function TreatmentGallery({
           {caption && <p className="text-h2 max-w-2xl">{caption}</p>}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
+        {/* Tall feature image on the left; the right column stretches to the
+            same height and splits evenly, so its bottom edge always lines up
+            with the bottom of the left image on md+ screens. On mobile each
+            image stacks as a normal square. */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 md:items-stretch">
           <div className="md:col-span-7">
             <SkinPhoto
               src={main}
@@ -31,16 +35,23 @@ export function TreatmentGallery({
               alt="Editorial skin imagery"
             />
           </div>
-          <div className="md:col-span-5 flex flex-col gap-6 md:gap-8">
+          <div
+            className={
+              "md:col-span-5 flex flex-col gap-6 md:gap-8 md:grid " +
+              (third ? "md:grid-rows-[1fr_1fr]" : "md:grid-rows-[1fr]")
+            }
+          >
             <SkinPhoto
               src={second}
               ratio="square"
+              className="md:aspect-auto md:h-full"
               alt="Editorial skin imagery"
             />
             {third && (
               <SkinPhoto
                 src={third}
                 ratio="square"
+                className="md:aspect-auto md:h-full"
                 alt="Editorial skin imagery"
               />
             )}
