@@ -66,7 +66,7 @@ export default function SkinTreatmentsPage() {
               specialist treatments matched to what your skin actually needs,
               not a one-size protocol.
             </p>
-            <BookButton>Book a skin consultation</BookButton>
+            <BookButton>Book a consultation</BookButton>
           </div>
           <div className="lg:col-span-5">
             <SkinPhoto

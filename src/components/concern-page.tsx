@@ -21,7 +21,7 @@ export function ConcernPage({ concern }: { concern: Concern }) {
               <Eyebrow>Skin concern</Eyebrow>
               <h1 className="text-display">{concern.name}.</h1>
               <p className="text-body max-w-xl">{concern.intro}</p>
-              <BookButton>Book a skin consultation</BookButton>
+              <BookButton>Book a consultation</BookButton>
             </div>
             <div className="lg:col-span-5">
               <SkinPhoto

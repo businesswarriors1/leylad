@@ -13,7 +13,7 @@ export const SITE = {
   phone: "0400 903 755",
   phoneIntl: "+61400903755",
   booking:
-    "https://www.fresha.com/a/leyla-d-skin-body-brows-melbourne-18-boardwalk-boulevard-x9zqmavd/booking",
+    "https://www.fresha.com/book-now/beauty-on-the-strand-x6kqax0c/services?lid=65695&oiid=sv%3A913567&share=true&pId=61123",
   stats: {
     services: "3,100",
     reviews: "670+",

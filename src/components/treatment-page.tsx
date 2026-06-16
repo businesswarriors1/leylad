@@ -48,7 +48,7 @@ export function TreatmentPage({
               <Eyebrow>{eyebrow}</Eyebrow>
               <h1 className="text-display">{title}</h1>
               <p className="text-body max-w-xl">{intro}</p>
-              <BookButton>Book this treatment</BookButton>
+              <BookButton>Book a consultation</BookButton>
             </div>
             <div className="lg:col-span-5">
               {videoSrc ? (

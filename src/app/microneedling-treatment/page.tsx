@@ -57,7 +57,7 @@ export default function MicroneedlingPage() {
               professional range.
             </p>
             <div className="pt-2">
-              <BookButton>Book the exosome upgrade</BookButton>
+              <BookButton>Book a consultation</BookButton>
             </div>
           </div>
 
